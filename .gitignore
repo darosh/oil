@@ -1,6 +1,8 @@
 node_modules
 bower_components
-build
 .idea
 
-!build/thumbnails/gif/all.gif
+build/*
+!build/thumbnails/
+build/thumbnails/*
+!build/thumbnails/gif
