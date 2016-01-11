@@ -1,14 +1,16 @@
 # Optical Illusions
 
-- **Library**
-- **Utilities**
-- **Application**
+A very early&hellip;
+
+- Library
+- Application
+- Utilities
 
 ![preview](./build/thumbnails/gif/all.gif "animation")
 
 ## Roadmap
 
-- [ ] Library
+### Library
   - [ ] Typescript + upcoming [d3.js 4.0](https://github.com/d3)
   - [ ] procedural and parametrized
   - [ ] scalable and resizable
@@ -20,8 +22,14 @@
   - [ ] browser and node
   - [ ] L10N
 
+  ### Application
+    - [ ] AngularJS + Material Design
+    - [ ] web
+    - [ ] mobile?
+    - [ ] search
+    - [ ] L10N
 
-- [ ] Utilities
+### Utilities
   - [ ] Atom feed
   - [ ] SVG
   - [ ] PNG
@@ -30,16 +38,7 @@
   - [ ] L10N
   - [ ] pseudo L10N
 
-
-- [ ] Application
-  - [ ] AngularJS + Material Design
-  - [ ] web
-  - [ ] mobile?
-  - [ ] search
-  - [ ] L10N
-
-
-- [ ] Development
+### Development
   - [ ] minimal d3.js build (d3-bundler)
   - [ ] minimal Typescript build (noEmitHelpers)
   - [ ] gulp
