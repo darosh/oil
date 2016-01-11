@@ -45,3 +45,10 @@ A very early&hellip;
 - [ ] tslint
 - [ ] editorconfig
 - [ ] clang format
+
+## Development
+
+### Prerequisites
+
+- [GraphicsMagick](http://www.graphicsmagick.org/) used via [gm](https://www.npmjs.com/package/gm) for GIFs
+- [Roboto font](https://www.google.com/fonts#UsePlace:use/Collection:Roboto) for PNGs from SVGs (rendered with PhantomJS)
