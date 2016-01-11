@@ -1,0 +1,17 @@
+{
+  "name": "oil",
+  "description": "Optical Illusions",
+  "main": "./dist/oil.js",
+  "authors": [
+    "Jan Forst <ensonador@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "system.js": "~0.19.9",
+    "roboto-fontface": "~0.4.3",
+    "angular-material": "~1.0.1"
+  }
+}
