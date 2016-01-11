@@ -4,7 +4,7 @@
 - **Utilities**
 - **Application**
 
-![preview](./build/thumbnails/png/animation.gif "animation")
+![preview](./build/thumbnails/gif/all.gif "animation")
 
 ## Roadmap
 
