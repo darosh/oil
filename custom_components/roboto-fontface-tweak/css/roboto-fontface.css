@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'RobotoBlack';
+  src:  url('../../../bower_components/roboto-fontface/fonts/Roboto-Black.eot');
+  src:  url('../../../bower_components/roboto-fontface/fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('../../../bower_components/roboto-fontface/fonts/Roboto-Black.woff2') format('woff2'),
+        url('../../../bower_components/roboto-fontface/fonts/Roboto-Black.woff') format('woff'),
+        url('../../../bower_components/roboto-fontface/fonts/Roboto-Black.ttf') format('truetype'),
+        url('../../../bower_components/roboto-fontface/fonts/Roboto-Black.svg#Roboto') format('svg');
+}
