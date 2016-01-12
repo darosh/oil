@@ -1,27 +1,23 @@
 export {
-    event,
     select,
-    selectAll,
-    selection
+    selectAll
 } from 'd3-selection';
-
-import 'd3-selection-multi';
 
 export {
     pie,
     arc,
     symbol,
-    circle,
-    triangle,
-    square,
-    diamond,
-    wye,
-    star,
-    cross
+    symbolCircle,
+    symbolCross,
+    symbolDiamond,
+    symbolSquare,
+    symbolStar,
+    symbolTriangle,
+    symbolWye
 } from 'd3-shape';
 
 export {
-    linear
+    scaleLinear
 } from 'd3-scale';
 
 export {
