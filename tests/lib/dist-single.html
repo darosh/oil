@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../bower_components/roboto-fontface/css/roboto-fontface.css">
+<link rel="stylesheet" href="../../custom_components/roboto-fontface-tweak/css/roboto-fontface.css">
+<link rel="stylesheet" href="./style.css">
+<body>
+<script src="../../custom_components/d3/d3.js"></script>
+<script src="../../dist/oil.js"></script>
+<script>
+    oil.Illusions.forEach(function (illusion) {
+        var o = new oil.Options(illusion, 210);
+        var i = new illusion(o);
+        i.draw();
+        document.body.appendChild(i.svg.node());
+    });
+</script>
+</body>

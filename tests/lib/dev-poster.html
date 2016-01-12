@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../bower_components/roboto-fontface/css/roboto-fontface.css">
+<link rel="stylesheet" href="../../custom_components/roboto-fontface-tweak/css/roboto-fontface.css">
+<link rel="stylesheet" href="./style.css">
+<body>
+<script src="../../node_modules/typescript/lib/typescript.js"></script>
+<script src="../../bower_components/system.js/dist/system.js"></script>
+<script src="../../custom_components/d3/d3.js"></script>
+<script>
+    System.config({
+        transpiler: 'typescript',
+        packages: {'../../lib': {defaultExtension: 'ts'}}
+    });
+
+    System.import('../../lib/index').then(function (oil) {
+        var cols = 3;
+        var rows = Math.ceil(oil.Illusions.length / cols);
+        var size = 210;
+        var margin = 10;
+        var svg = new oil.Svg(null, cols * (size + 4 * margin) - 2 * margin, rows * (size + 4 * margin) - 2 * margin, margin * 2, '#fff');
+
+        document.body.appendChild(svg.svg.node());
+        svg.svg = svg.root;
+
+        function frame(svg, s, x, y) {
+            svg
+                    .append('rect')
+                    .attr('width', s[0] + 2 * margin)
+                    .attr('height', s[1] + 2 * margin)
+                    .attr('fill', 'none')
+                    .attr('transform', 'translate(' + [x, y] + ')')
+                    .attr('stroke', '#666')
+                    .attr('stroke-width', 2)
+                    .attr('rx', margin)
+                    .attr('ry', margin);
+        }
+
+        for (var j = 0; j < oil.Illusions.length; j++) {
+            var illusion = oil.Illusions[j];
+            var o = new oil.Options(illusion, size, margin);
+            var i = new illusion(o, svg.svg);
+            i.root = svg.newRoot(size, margin, true, frame,
+                    (j % cols) * (size + 4 * margin),
+                    Math.floor(j / cols) * (size + 4 * margin));
+            i.draw();
+        }
+    });
+</script>
+</body>
