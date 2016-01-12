@@ -41,14 +41,6 @@ A very early&hellip;
 - [ ] L10N
 - [ ] pseudo L10N
 
-### Development
-- [ ] minimal d3.js build (d3-bundler)
-- [ ] minimal Typescript build (noEmitHelpers)
-- [ ] gulp
-- [ ] tslint
-- [ ] editorconfig
-- [ ] clang format
-
 ## Development
 
 ### Prerequisites
