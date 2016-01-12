@@ -21,7 +21,7 @@ A very early&hellip;
 - [ ] standalone
 - [ ] Inkscape compatible
 - [ ] illusion metadata and credits
-- [ ] reveal feature
+- [ ] hint feature
 - [ ] browser and node
 - [ ] L10N
 
