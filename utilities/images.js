@@ -22,7 +22,7 @@ function write(f, name, i, done) {
 
 function generate(cfg, done) {
     async.eachLimit(global.oil.Illusions, os.cpus().length, function (illusion, cb) {
-        var o = new global.oil.Options(illusion, cfg.size);
+        var o = new global.oil.Options(illusion, cfg.size, cfg.margin);
         var i = new illusion(o);
         i.draw();
         write(cfg.output, o.id, i, cb);

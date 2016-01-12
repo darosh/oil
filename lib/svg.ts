@@ -32,10 +32,10 @@ export class Svg {
             this.addBackground(size, background);
         }
 
-        this.root = this.newRoot([width, height], margin, clip, frame);
+        this.root = this.newRoot([width, height], margin, clip, background, frame);
     }
 
-    newRoot(size, margin, clip, frame, x?, y?) {
+    newRoot(size, margin, clip, background, frame, x?, y?) {
         var clipId;
         var s = size.length ? size : [size, size];
 
@@ -47,7 +47,7 @@ export class Svg {
             frame(this.svg, s, x, y);
         }
 
-        if (margin || clip || x >= 0) {
+        if (margin || clip || background || x >= 0) {
             var root = this.addRoot(margin, clip, clipId);
 
             if (x >= 0) {
@@ -55,6 +55,8 @@ export class Svg {
             }
 
             return root;
+        } else {
+            return this.svg;
         }
     }
 

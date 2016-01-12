@@ -2,22 +2,20 @@ import {IIllusion} from './iillusion';
 import {IIllusionStatic} from './iillusionstatic';
 
 export class Options {
-    grid:number = 6;
-
-    size:number = 120;
-    margin:number = 10;
+    size:number;
+    margin:number;
 
     black:string = '#000';
     white:string = '#fff';
     background:string = '#fff';
+
     clip:boolean = false;
 
-    l0:number = 1 / 2;
-
-    l1:number = 1;
-    l2:number = 2;
-    l3:number = 3;
-    l4:number = 4;
+    l0:number;
+    l1:number;
+    l2:number;
+    l3:number;
+    l4:number;
 
     [index:string]:any;
 
@@ -37,8 +35,9 @@ export class Options {
         return ret;
     }
 
-    constructor(illusion:IIllusion, size:number = 120) {
+    constructor(illusion:IIllusion, size:number = 120, margin:number = 10) {
         this.size = size;
+        this.margin = margin;
 
         this.l1 = Math.max(1, Math.floor(size / 160));
         this.l2 = this.l1 * 2;
