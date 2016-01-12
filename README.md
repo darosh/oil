@@ -60,6 +60,7 @@ A very early&hellip;
 ### Install
 
 ```
+npm i -g gulp
 npm i
 ```
 
