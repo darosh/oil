@@ -1,5 +1,8 @@
 # Optical Illusions
 
+*Because they [show how we see](https://www.ted.com/talks/beau_lotto_optical_illusions_show_how_we_see).*
+
+
 A very early&hellip;
 
 - Library
