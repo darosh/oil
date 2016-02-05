@@ -372,6 +372,10 @@ export {
 //  event
 } from "d3-selection";
 
+export {
+    transition
+} from "d3-transition";
+
 //export {
 //  axisTop,
 //  axisRight,
