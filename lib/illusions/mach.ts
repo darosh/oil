@@ -42,4 +42,26 @@ export class Mach extends Illusion {
                 return 'translate(' + [i * size, 0] + ')';
             });
     }
+
+    showHint() {
+        var size = this.options.size / this.options.grid;
+        var rowArr = d3.range(this.options.grid);
+        var rows = this.root.selectAll('rect').data(rowArr);
+        rows.transition()
+            .attr('width', Math.ceil(size / 2))
+            .attr('transform', function (d, i) {
+                return 'translate(' + [(i + 0.25) * size, 0] + ')';
+            });
+    }
+
+    hideHint() {
+        var size = this.options.size / this.options.grid;
+        var rowArr = d3.range(this.options.grid);
+        var rows = this.root.selectAll('rect').data(rowArr);
+        rows.transition()
+            .attr('width', Math.ceil(size))
+            .attr('transform', function (d, i) {
+                return 'translate(' + [i * size, 0] + ')';
+            });
+    }
 }

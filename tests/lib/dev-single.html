@@ -18,6 +18,18 @@
             var i = new illusion(o);
             i.draw();
             document.body.appendChild(i.svg.node());
+
+            if (i.showHint) {
+                (function (i) {
+                    i.svg.on('mouseenter', function () {
+                        i.showHint();
+                    });
+
+                    i.svg.on('mouseleave', function () {
+                        i.hideHint();
+                    });
+                })(i);
+            }
         });
     });
 </script>
